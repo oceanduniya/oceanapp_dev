@@ -15,3 +15,8 @@ variable "web-server-port" {
   #description = "this is port that serves HTTP requests"
   default = 22
 }
+variable "server_port" {
+  description = "The port the server will use for HTTP requests"
+  type        = number
+  default     = 8080
+}
