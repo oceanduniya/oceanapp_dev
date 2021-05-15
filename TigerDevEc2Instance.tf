@@ -23,13 +23,13 @@ resource "aws_security_group" "allow-SSH" {
     from_port   = var.web-server-port
     to_port     = var.web-server-port
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["100.400.0.0/24"]
   }
   
   egress {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["100.400.0.0/24"]
   } 
 }
